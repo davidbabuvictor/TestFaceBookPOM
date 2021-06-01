@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="FaceBookDemo">
+
+   <listeners>
+		<listener class-name="com.facebook.utilities.Reporting" />
+	</listeners>
+
+	<test name="FacebookApp Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.facebook.testCases.TC_001_LoginPageTest" />
+			<class name="com.facebook.testCases.TC_002_CreatePost" />
+			<class name="com.facebook.testCases.TC_003_UpdatePost" />
+		
+
+		</classes>
+
+	</test>
+
+</suite>
+
+
